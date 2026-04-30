@@ -1,0 +1,97 @@
+<section id="places">
+  <h2>Famous Places</h2>
+
+  <div class="places-container">
+
+    <div class="place-card">
+      <img src="images/Gad.jpg" alt="Local Temple">
+      <h3>Local Temples</h3>
+      <p>Spiritual places known for peace, devotion, and cultural importance.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="images/Dhodap Fort.jpg" alt="Dhodap Fort">
+      <h3>Hills & Nature Spots</h3>
+      <p>Beautiful hills, greenery, and trekking spots around Kalwan.</p>
+    </div>
+
+    <div class="place-card">
+      <h3>Weekly Markets</h3>
+      <p>Local markets where farmers sell fresh produce and traditional goods.</p>
+    </div>
+
+  </div>
+
+  <!-- Back Button -->
+  <div class="back-btn">
+    <a href="index.html">
+      <button>⬅ Back to Home</button>
+    </a>
+  </div>
+
+</section>
+
+<style>
+  .places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .place-card {
+    background: white;
+    width: 280px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: 0.3s;
+  }
+
+  .place-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .place-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .place-card h3 {
+    margin: 10px 0 5px;
+    color: #2d3436;
+  }
+
+  .place-card p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .back-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .back-btn button {
+    background: #2d3436;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .back-btn button:hover {
+    background: black;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .places-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
